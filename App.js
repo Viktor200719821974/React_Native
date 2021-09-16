@@ -1,31 +1,32 @@
-import { StatusBar } from "expo-status-bar";
+// import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 //import Users from "./components/Users";
 import {NavigationContainer} from "@react-navigation/native";
-import {createStackNavigator} from "@react=navigation/stack";
+// import {createStackNavigator} from "@react-navigation/stack";
 import Home from "./components/Home";
-//import UsersDetails from "./screen/Userdetails";
+//import UsersDetails from "./screen/UsersDetails";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import UsersPageNavigator from "./screen/UsersPageNavigator";
 
 let BottomTabNavigator = createBottomTabNavigator();
-let StackNavigator = createStackNavigator();
+// let StackNavigator = createStackNavigator();
 
 export default function App() {
 
+
   return (
     <NavigationContainer>
-    <BottomTabNavigator.Navigator tabBarOption={{tabStyle: justifyContent: 'center', alignItems: 'center'}}>
+    <BottomTabNavigator.Navigator>
     <BottomTabNavigator.Screen name={'UsersPageNavigator'} component={UsersPageNavigator} />
-    <BottomTabNavigator.Screen name={'Home'} component={Home} /> />
+    <BottomTabNavigator.Screen name={'Home'} component={Home} />
 
     </BottomTabNavigator.Navigator>
-//    <StackNavigator.Navigator>
-//    <StackNavigator.Screen name={'Users'} component={Users} />
-//    <StackNavigator.Screen name={'Home'} component={Home} />
-//    <StackNavigator.Screen name={'Users Details'} component={UsersDetails} />
-//    </StackNavigator.Navigator>
+{/*//    <StackNavigator.Navigator>*/}
+{/*//    <StackNavigator.Screen name={'Users'} component={Users} />*/}
+{/*//    <StackNavigator.Screen name={'Home'} component={Home} />*/}
+{/*//    <StackNavigator.Screen name={'Users Details'} component={UsersDetails} />*/}
+{/*//    </StackNavigator.Navigator>*/}
     </NavigationContainer>
   );
 }

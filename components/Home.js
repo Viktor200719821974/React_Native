@@ -1,6 +1,6 @@
 import React from "react";
 import {StyleSheet} from "react-native";
-import {View, Text, Button, TouchableOpacity} from "react-native";
+// import {View, Text, Button, TouchableOpacity} from "react-native";
 import {createDrawerNavigator} from "@react-navigation/drawer";
 import About from "./About";
 import Company from "./Company";

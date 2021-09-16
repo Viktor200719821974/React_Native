@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {FlatList, StyleSheet} from "react-native";
 import {View, Text, Button, TouchableOpacity} from "react-native";
-import {getUsers} from "../services/api.service";
+// import {getUsers} from "../services/api.service";
 import User from "./User";
-import {NavigationContainer} from "@react-navigation/native";
-import {createStackNavigator} from "@react=navigation/stack";
+// import {NavigationContainer} from "@react-navigation/native";
+// import {createStackNavigator} from "@react-navigation/stack";
 
 
 const Users = (props) =>{
